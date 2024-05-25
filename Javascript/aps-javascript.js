@@ -9,7 +9,7 @@ Matrícula: 2024101092
 
 function ehPrimo(num) {
     let ehPrimo = true;
-    
+
     if (num < 2) {
         ehPrimo = false;
     } else {
@@ -29,7 +29,7 @@ function ehPrimo(num) {
 }
 
 function encontrDezMaioresPrimos(num) {
-   
+
     if (isNaN(num)) {
         console.log("Por favor, insira um número válido.");
         return;
@@ -41,16 +41,17 @@ function encontrDezMaioresPrimos(num) {
             primes.push(num);
         }
         num--;
-        
+
     }
-    if(primes.length == 10){
+
+    if (primes.length < 10) {
         console.log("Os 10 maiores números primos a partir do número fornecido são:");
         console.log(primes);
-    }else {
+    } else {
         console.log("Não possui 10 primos digite um valor maior");
         console.log(primes);
     }
-    
+
 }
 
-encontrDezMaioresPrimos(10);
+encontrDezMaioresPrimos(50);
