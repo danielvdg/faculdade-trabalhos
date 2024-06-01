@@ -44,7 +44,7 @@ function encontrDezMaioresPrimos(num) {
 
     }
 
-    if (primes.length < 10) {
+    if (primes.length == 10) {
         console.log("Os 10 maiores números primos a partir do número fornecido são:");
         console.log(primes);
     } else {
